@@ -166,4 +166,18 @@ nav.stmenu {
  }
 
  
+ .story_modal {
+   display: none;
+}
 
+/* kropka bez spacji - obie te klasy muszą być na tym samym elemencie */
+.story_modal.modal_clicked {
+   display: block;
+
+}
+
+/* kropka ze spacją - jeden element jest zagnieżdżony w drugim, jedna klasa jest na nadrzędnym, druga na podrzędnym */
+.story_modal .story_modal_overlay {
+   position: absolute;
+   opacity: .5;
+}
