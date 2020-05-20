@@ -1,0 +1,204 @@
+<link rel="stylesheet" href="flatpage_style.css"/>
+<link href="https://fonts.googleapis.com/css?family=Kotta+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<!--Video grande-->
+<p id="start" style="position: relative;width:100%;height: 0;margin:0;padding: 0 0 56.25% 0;z-index:1;">
+    <iframe src="https://www.youtube.com/embed/O71-jVycitA" frameborder="0" allowfullscreen style="position: absolute;top: 0;left: 0;width:100%; height: 100%;">
+    </iframe>
+</p>
+
+<nav class="stmenu topnav">
+    <ul>
+        <!-- przez # odnoszę się do id, zjedzie w przeglądarce tak, żeby ten element był dorównany do lewego górnego rogu -->
+        <li><a class="menulink highlight" onclick="toggle_active(this)" href="#section1">daleko</a></li>
+        <li><a class="menulink" onclick="toggle_active(this)" href="#section2">nostalgia</a></li>
+        <li><a class="menulink" onclick="toggle_active(this)" href="#section3">przełom</a></li>
+        <li><a class="menulink" onclick="toggle_active(this)" href="#section4">powrót</a></li>
+        <li><a class="menulink" onclick="toggle_active(this)" href="#section5">dzieci itaki</a></li>
+    </ul>
+</nav>
+
+<!-- spacja wyznacza osobne klasy, pierwszy znacznik p ma dwie klasy: text i frt-->
+<!-- w css priorytet jest wyznaczany przez to, który z opisów jest bardziej konkretny (jeśli jest użyty rzadziej, przeglądarka uważa, że ta klasa ma pierwszeństwo)-->
+<!-- jeśli coś nie działa, sprawdzić w Inspect przeglądarki priorytety klas (01)-->
+<p class="text">
+	Itaka to coś więcej niż wyspa na Morzu Jońskim. To raj, w którym Odyseusz żył szczęśliwie z Penelopą i Telemachem. Słodki kraj lat dziecinnych, który niegdyś opuścił, a do którego po latach powrócił. Homer kreśli na kartach Odysei relację z długiej, mozolnej obfitującej w przygody wyprawy. Odtąd Itaka pozostaje symbolem długiej podróży, która prowadzi do domu.
+</p>
+<!-- spacja wyznacza osobne klasy, drugi znacznik ma jedną klasę -->
+<!-- ctr + d - kolejno zaznaczy wszystkie elementy o tej samej nazwie: menu na górze - selection - add next occurence -->
+<p class="text">
+	Nasi bohaterowie przeżyli swoje dzieciństwo w Kościele, na żyznej glebie wiary pełnej radości. Pewnego jednak dnia tak jak Odyseusz postanowili porzucić Itakę i przez długi czas przebywali daleko. Dla niektórych z nich nieobecność oznaczała otchłań, dla innych pustkę, dla wszystkich - tęsknotę. Jedni wyrzekali się Itaki, inni o niej po prostu zapominali, jeszcze inni pozostawali na jej obrzeżach. Ale wszyscy w pewnym momencie zapragnęli wrócić. Wrócić do Kościoła. Stanąć na pewnym gruncie.
+</p>
+
+<section id="section1">
+
+    <!-- Foto con título -->
+    <div class="image_header">
+        <h2 class="section_title">daleko</h2>
+    </div>
+    
+    
+    <!-- Texto -->
+    
+    <p class="text">Bez widu, słychu przepadł. A syn cóż dziedziczy? Łzy i ból.<br/><span>(Odyseja, Pieśń I)</span></p>
+    
+    <!-- Video de Youtube -->
+    <!-- span używa się do tego, żeby umieścić jakiś tekst przy obrazie. p jako akapit tekstu - to jest informacja dla przeglądarki -->
+    
+    <div class="embed_youtube">
+        <div class="adjust_youtube">
+            <iframe src="https://www.youtube.com/embed/fDtD8PhrNLo" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+</section>
+
+<section id="section2">
+
+    <!-- Foto con título -->
+    <div class="image_header">
+        <h2 class="section_title">nostalgia</h2>
+    </div>
+    
+    <!-- Texto -->
+    
+    <p class="text">Jego oczy nie osychały od łez; a pobyt uroczy truła ciągła tęsknica.<br/><span>(Odyseja, Pieśń V)</span></p>
+    
+    <!-- Video de Youtube -->
+    <div class="embed_youtube">
+        <div class="adjust_youtube">
+            <iframe src="https://www.youtube.com/embed/6or-Cv-2k8w" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+</section>
+    
+<section id="section3">
+    
+    <!-- Foto con título -->
+    <div class="image_header">
+        <h2 class="section_title">przełom</h2>
+    </div>
+    
+    <!-- Texto -->
+    
+    <p class="text">Przeto rozkaz przynoszę: wypuść go bez zwłoki!
+    On daleko od swoich nie umrze. Wyroki
+    Przeznaczyły mu druhów powitać i ściany
+    Zamku swego oglądać i ojczyste łany.<br/><span>(Odyseja, Pieśń V)</span></p>
+    
+    <!-- Video de Youtube -->
+    <div class="embed_youtube">
+        <div class="adjust_youtube">
+            <iframe src="https://www.youtube.com/embed/_hywPdb5W_E" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+</section>
+
+<section id="section4">
+    <!-- Foto con título -->
+    <div class="image_header">
+        <h2 class="section_title">powrót</h2>
+    </div>
+    
+    
+    <!-- Texto -->
+    
+    <p class="text">Opowiedz to dokładnie, niech wiem w mej przygodzie,
+    Czy na wyspie Itace naprawdę stanąłem,
+    Jak przed chwilą z ust człeka jakiegoś powziąłem.<br/><span>(Odyseja, Pieśń XXIV)</span></p>
+    
+    <!-- Video de Youtube -->
+    <div class="embed_youtube">
+        <div class="adjust_youtube">
+            <iframe src="https://www.youtube.com/embed/AKo1u_e8fAg" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+</section>
+
+<script>
+    function toggle_active(html_element){
+        const menu_elements = document.getElementsByClassName("menulink")
+        for(const element of menu_elements){
+            element.classList.remove("highlight")
+        }
+        html_element.classList.add("highlight")
+    }
+    function open_modal(html_element){
+        console.log(html_element)
+        console.log(html_element.id)
+        // weź pierwszy element z tego, co zwrócisz
+        const modal = document.getElementsByClassName("story_modal")[0]
+        modal.classList.add("modal_clicked")
+
+
+    }
+</script>
+
+
+<div class="stories_container">
+    <div class="story_button" id="story_rosa" onclick="open_modal(this)">
+        <img class="imr" src="https://odnmedia.s3.amazonaws.com/reports/itaca/HijosItaca_Rosa.jpg">
+        <h2 class="tb">
+            ROSA
+        </h2>
+    </div>   
+</div>
+
+<div class="story_modal">
+    <!-- czarne tło -->
+    <div class="sotry_modal_overlay"></div>
+    <div class="story_container">
+        <!-- okienko z historią Rosy -->
+        <div class="animated-modal" id="p1rosa">
+            <!-- Foto con nombre -->
+            <span style="overflow: hidden;position: relative;display:block;margin:0 auto;text-align:center;width:100%;max-width:960px;">
+            <img style="width:100%;" src="https://odnmedia.s3.amazonaws.com/reports/itaca/p/pRosa1.jpg">
+        <h2 class="tn">ROSA</h2>
+        </span>
+        <blockquote class="com"> <span>"Nie robiłam nic ponad to, co wymagane i co należało wypełnić. Wszystko, co robiłam, robiłam żeby dobrze wypaść, z poczucia obowiązku."
+        </span></blockquote>
+
+        <p class="txp">Rosa jest elegancką kobietą, jedną z tych, których o wiek się nie pyta. Pierwszym zdarzeniem, które zmieniło jej życie, było coś, co zaszło, gdy wychodziła na ulicę Gastóna de Bearne w Saragossie. Była zła. Wściekła. Usłyszała właśnie zdanie, które wprost ją paliło od środka: "Są chrześcijanie, którzy są zapalonymi lampkami, i są inni... zgaszeni".
+        </p>
+        <p class="txp">Nikt jej nawet w najdelikatniejszej formie nie zasugerował, że należy do tej drugiej grupy, ale i wśród wszystkich osób, które oglądały ten film ze św. Josemaríą, nikt nie wydawał się tak poruszony jak ona. Nikt nie poczuł się tak wezwany do odpowiedzi jak ona. Nikt nie poczuł się tak niezręcznie.
+        </p>
+        <p class="txp">Od tej chwili nic już nie było takie samo, bo nie umiała przestać stawiać sobie pytań, a co gorsza - nie mogła odnaleźć żadnej jasnej odpowiedzi. Na krysztale jej idealnego życia pojawiła się nagle rysa, która przyprawiła ją o obsesję tak intensywną, jak intensywna była dotąd jej radość życia.
+        </p>
+        <p class="txp"><i>Dlaczego więc miałabym być zgaszona skoro mam wspaniałe życie? Pracę bardzo lubię, mam rodzinę: męża, dzieci. Dobrze mi się wiedzie, korzystam z życia, spotykam się z koleżankami, chodzę do kina, teatru.</i>
+        </p>
+        <blockquote class="com">"Dlaczego miałabym być zgaszona skoro mam takie wspaniałe życie?"
+        </blockquote>
+        <span style="display:block;margin:0 auto;text-align:center;width:100%;max-width:760px;">
+        <img style="width:100%;" src="https://odnmedia.s3.amazonaws.com/reports/itaca/p/pRosa2.jpg">
+        </span>
+        <p class="txp">Właśnie teatr, który z początku miał być zwykłą rozrywką, stał się niemal wolontariatem. Przed dziesięciu laty wspólnie z rodzicami innych dzieci z tej samej szkoły założyli niewielkie przedsiębiorstwo. Inicjatywa zbiegła się w czasie z początkiem kryzysu, gdy dotacje stały się niezadawalające i organizacje pozarządowe musiały szukać innych źródeł finansowania. Znajomi podejmowali między sobą dziesiątki dzieł solidarności zbierając fundusze na dzieci z problemami motorycznymi, upośledzeniami umysłowymi, na Caritas...
+        </p>
+        <p class="txp">Życie toczyło się dalej i po kilku miesiącach Bóg ponownie dotknął serca Rosy, tym razem po to, by powróciło na swoje miejsce. Pewna przyjaciółka powiedziała jej, że zapisała się na ćwiczenia duchowe, swego rodzaju rekolekcje. <i> Może też pojedziesz? </i> Bez większych oporów podjęła decyzję. Uznała, że to dobra okazja, by zaznać nieco spokoju, zrelaksować się, poczytać... bez konieczności gotowania obiadów i przygotowywania kolacji.
+        </p>
+        <p class="txp">A tam, tak po prostu, odkryła miłość Bożą. To było jak eksplozja, trudno zresztą, o ile to w ogóle możliwe, wyjaśnić, co się działo. Dziś jeszcze wspomnienie to wywołuje u niej gęsią skórkę.
+            <i> To tak, jakbym była w doskonale oświetlonym pokoju i nagle zdała sobie sprawę, że za lampami są zasłony. Odsuwam je i wpada światło słoneczne, które zalewa wszystko i przyćmiewa wszystkie lampy. Nadal są, ale już bezużyteczne. Tego przeżycia nie da się porównać z niczym.
+            </i>
+        </p>
+        <span style="display:block;margin:0 auto;text-align:center;width:100%;max-width:760px;">
+        <img style="width:100%;" src="https://odnmedia.s3.amazonaws.com/reports/itaca/p/pRosa4.jpg">
+        </span>
+        <p class="txp">Mówi, że od tego momentu wszystko się zmieniło, że widzi rzeczy w innym świetle, jakby przez inny filtr. Choć zewnętrznie jej życie się nie zmieniło. Żyje jak dotychczas, jak ekwilibrystka, ale zawsze ma obok siebie sieć, i gdy upadnie - co nieuniknione - nic się złego nie dzieje.
+        </p>
+        <p class="txp">Gdy powiedziała mężowi, co się jej przytrafiło, ani trochę się nie zdziwił. Więcej - właśnie tego oczekiwał.  <i> Dużo ze sobą rozmawiamy i wyobrażam sobie, że da się odczuć, co druga osoba przeżywa. Nigdy nie zapomnę tego, co mi powiedział: jeśli Ty jesteś szczęśliwsza, cała rodzina będzie szczęśliwsza. </i> I stanowi to coś nowego.
+        </p>
+        <p class="txp">Nie to, żeby wcześniej miała złe życie - nie była smutną osobą ani nie potrzebowała Boga, by rozwiązał jej jakiś problem. Była chrześcijanką, która spełniała przykazania, na wypadek gdyby odległemu Bogu na wysokościach zachciało się ją ukarać za ich niespełnianie. Teraz odkryła, że Bóg nie sądzi ją według tego, co robi źle, ale według miłości.
+            <i> To poczucie towarzyszy mi stale, również dlatego, że wzmagam je w sobie i robię wszystko, co tylko możliwe, by przybliżyć się do Niego. Czuć się córką Boga od wieczności, od zawsze... Kiedy już mam swoje lata! </i>
+        </p>
+        <p class="txp">
+            <i>I myślę: jak mogłam tego wcześniej nie dostrzegać? Byłam naprawdę zaślepiona.</i>
+        </p>
+        <button data-fancybox-close="" class="fancybox-close-small bt" title="Close"><svg viewbox="0 0 32 32"><path d="M10,10 L22,22 M22,10 L10,22"></path></svg></button>
+        </div>
+    </div>
+</div>
+    
+    

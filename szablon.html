@@ -1,0 +1,88 @@
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test</title>
+<link rel="stylesheet" href="flatpage_style.css"/>
+<link href="https://fonts.googleapis.com/css?family=Kotta+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+ 
+<body>
+<!--Video grande-->
+<p id="start" style="position: relative;width:100%;height: 0;margin:0;padding: 0 0 56.25% 0;z-index:1;">
+    <iframe src="https://www.youtube.com/embed/O71-jVycitA" frameborder="0" allowfullscreen style="position: absolute;top: 0;left: 0;width:100%; height: 100%;">
+    </iframe>
+</p>
+
+<nav class="stmenu topnav">
+    <ul>
+        <!-- przez # odnoszę się do id, zjedzie w przeglądarce tak, żeby ten element był dorównany do lewego górnego rogu -->
+        <li><a class="menulink highlight" onclick="toggle_active(this)" href="#section1">przykład 1</a></li>
+        <li><a class="menulink" onclick="toggle_active(this)" href="#section2">przykład 2</a></li>
+        <li><a class="menulink" onclick="toggle_active(this)" href="#section3">w budowie 3</a></li>
+        <li><a class="menulink" onclick="toggle_active(this)" href="#section4">w budowie 4</a></li>
+        <li><a class="menulink" onclick="toggle_active(this)" href="#section5">w budowie 5</a></li>
+    </ul>
+</nav>
+
+<!-- do wyświetlania wielu filmików w jednym rzędzie -->
+<section id="section1">
+    <div class="image_header">
+        <h2 class="section_title">trzy filmiki w rzędzie</h2>
+    </div>
+    <div class="flex_container">
+        <div class="flex_item">
+            <iframe  src="https://www.youtube.com/embed/yKbC8KJApY0?rel=0&showinfo=0&controls=1&color=white&iv_load_policy=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="flex_item">
+            <iframe  src="https://www.youtube.com/embed/7yw4nQ3HIxk?rel=0&showinfo=0&controls=1&color=white&iv_load_policy=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="flex_item">
+            <iframe  src="https://www.youtube.com/embed/3RKLXKAKRTs?rel=0&showinfo=0&controls=1&color=white&iv_load_policy=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="flex_item">
+            <iframe  src="https://www.youtube.com/embed/vkQXhf3xzEc?rel=0&showinfo=0&controls=1&color=white&iv_load_policy=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="flex_item">
+            <iframe  src="https://www.youtube.com/embed/3RKLXKAKRTs?rel=0&showinfo=0&controls=1&color=white&iv_load_policy=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="flex_item">
+            <iframe  src="https://www.youtube.com/embed/vkQXhf3xzEc?rel=0&showinfo=0&controls=1&color=white&iv_load_policy=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- do wyświetlania jednego filmiku w rzędzie -->
+<section id="section2">
+
+    <!-- Foto con título -->
+    <div class="image_header">
+        <h2 class="section_title">jeden filmik w rzędzie</h2>
+    </div>
+    
+    
+    <!-- Texto -->
+    
+    <p class="text">Bez widu, słychu przepadł. A syn cóż dziedziczy? Łzy i ból.<br/><span>(Odyseja, Pieśń I)</span></p>
+    
+    <!-- Video de Youtube -->
+    <!-- span używa się do tego, żeby umieścić jakiś tekst przy obrazie. p jako akapit tekstu - to jest informacja dla przeglądarki -->
+    <div class="embed_single_video">
+        <div class="adjust_single_video">
+            <iframe src="https://www.youtube.com/embed/fDtD8PhrNLo" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+</section>
+
+
+
+<script>
+    function toggle_active(html_element){
+        const menu_elements = document.getElementsByClassName("menulink")
+        for(const element of menu_elements){
+            element.classList.remove("highlight")
+        }
+        html_element.classList.add("highlight")
+    }
+</script>
+
+
