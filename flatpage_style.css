@@ -200,13 +200,13 @@ nav.stmenu {
    z-index: 3;
    background: white;
    height: 100%;
-   width: 80%;
+   width: 960px;
    position: fixed;
    top: 0;
    bottom: 0;
-   display: flex;
+   /* display: flex; */
+   /* justify-content: center; */
    overflow-y: scroll;
-   justify-content: center;
 }
 
 .modal_image_wrapper {
@@ -228,4 +228,19 @@ nav.stmenu {
    /* padding: 0 5%; */
    /* margin: 30px auto 30px auto; */
    /* max-width: 760px; */
+}
+
+#rosa_modal_header.image_header {
+   background-image: url(https://odnmedia.s3.amazonaws.com/reports/itaca/p/pRosa1.jpg);
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-end;
+}
+
+#rosa_modal_header h2.section_title {
+   text-transform: capitalize;
+   margin-left: 90px;
+   margin-bottom: 20px;
+   text-shadow: 3px 3px rgb(37, 37, 37, 0.425);
+
 }
