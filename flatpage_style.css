@@ -55,13 +55,18 @@ flex do rozmieszczenia */
 
 .embed_single_video iframe {
    width: 100%;
-   /* height: auto; */
-   
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
 }
 
 .adjust_single_video {
    width: 80%;
    margin: 5em;
+   height: 0;
+   padding-bottom: 56.25%;
+   position: relative;
 }
 
 
@@ -172,12 +177,55 @@ nav.stmenu {
 
 /* kropka bez spacji - obie te klasy muszą być na tym samym elemencie */
 .story_modal.modal_clicked {
-   display: block;
+   display: flex;
+   justify-content: center;
 
 }
 
 /* kropka ze spacją - jeden element jest zagnieżdżony w drugim, jedna klasa jest na nadrzędnym, druga na podrzędnym */
 .story_modal .story_modal_overlay {
-   position: absolute;
-   opacity: .5;
+   position: fixed;
+   opacity: 0.4;
+   height: 100%;
+   width: 100%;
+   z-index: 2; /* będzie na wierzchu */
+   background: black;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+}
+
+.story_modal .story_container {
+   z-index: 3;
+   background: white;
+   height: 100%;
+   width: 80%;
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   display: flex;
+   overflow-y: scroll;
+   justify-content: center;
+}
+
+.modal_image_wrapper {
+   overflow: hidden;
+   position: relative; 
+   /* margin:0 auto; */
+   text-align:center;
+   width:100%;
+   max-width:960px;
+}
+
+.story_text p.txp, p.txp {
+   font-family: 'Raleway', serif;
+   font-size: 25px;
+   line-height: 1.4;
+   color: #000;
+   width: 760px;
+   /* text-align: left; */
+   /* padding: 0 5%; */
+   /* margin: 30px auto 30px auto; */
+   /* max-width: 760px; */
 }
