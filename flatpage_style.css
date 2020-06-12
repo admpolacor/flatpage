@@ -176,10 +176,9 @@ nav.stmenu {
 }
 
 /* kropka bez spacji - obie te klasy muszą być na tym samym elemencie */
-.story_modal.modal_clicked {
+.story_modal.modal_visible {
    display: flex;
    justify-content: center;
-
 }
 
 /* kropka ze spacją - jeden element jest zagnieżdżony w drugim, jedna klasa jest na nadrzędnym, druga na podrzędnym */
@@ -218,6 +217,11 @@ nav.stmenu {
    max-width:960px;
 }
 
+.story_text {
+   width: 80%;
+   margin: 0 auto;
+}
+
 .story_text p.txp, p.txp {
    font-family: 'Raleway', serif;
    font-size: 25px;
@@ -228,6 +232,53 @@ nav.stmenu {
    /* padding: 0 5%; */
    /* margin: 30px auto 30px auto; */
    /* max-width: 760px; */
+}
+
+/* cudzysłów
+https://odnmedia.s3.amazonaws.com/reports/itaca/br1.jpg
+ */
+
+ .story_text blockquote.modal_quote {
+    position: relative;
+    width: 100%;
+    margin: 20px auto;
+ }
+
+.story_text blockquote.modal_quote span::before {
+   background-image: url(https://odnmedia.s3.amazonaws.com/reports/itaca/br1.jpg);
+   background-size: 60px;
+   width: 60px;
+   height: 50px;
+   content: " ";
+   position: absolute;
+   left: 0;
+   top: 0;
+}
+
+.story_text blockquote.modal_quote span::after {
+   background-image: url(https://odnmedia.s3.amazonaws.com/reports/itaca/br2.jpg);
+   background-size: 60px;
+   width: 60px;
+   height: 50px;
+   content: " ";
+   position: absolute;
+   right: 0;
+   bottom: 0;
+}
+
+.story_text blockquote.modal_quote span {
+   font-family: 'Kotta One', sans-serif;
+   text-transform: uppercase;
+   /* padding: 60px; */
+   font-size: 20px;
+   text-align: center;
+   line-height: 1.5;    
+   display: block;
+   margin: 0 auto;
+   position: relative;
+   width: 80%;
+   max-width: 800px;
+   padding: 20px 60px;
 }
 
 #rosa_modal_header.image_header {
