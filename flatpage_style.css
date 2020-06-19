@@ -6,6 +6,9 @@ do id odnoszę się przez #, a do class po kropce */
 /* css do tego jak ma wyglądać strona, html do tego co ma tam być i jaka struktura.
 flex do rozmieszczenia */
 
+html {
+   scroll-behavior: smooth;
+}
 
 .flex_container {
    display: flex;
@@ -89,6 +92,7 @@ nav.stmenu {
     color: #0900c3;
     /* przyklejenie menu */
     position:sticky;
+    z-index: 1;
     /* odstęp między menu a górą ekranu */
     top:0;
     font-family: 'Kotta One', sans-serif;
