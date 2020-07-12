@@ -8,6 +8,7 @@ flex do rozmieszczenia */
 
 html {
    scroll-behavior: smooth;
+   overflow-x: hidden;
 }
 
 .flex_container {
@@ -21,10 +22,16 @@ html {
  }
  
  .flex_content {
-	 flex-flow: column;
+    flex-flow: column;
+   
  }
 
- 
+ .flex_item_image img{
+   padding: 5px;
+   width: 45%;
+   margin: 10px;
+  }
+
  .flex_item_video {
    padding: 5px;
    width: 450px;
